@@ -1,0 +1,3 @@
+[submodule "debuggabletool"]
+	path = debuggabletool
+	url = git@github.com:kevinross/android_debuggable_tool.git
