@@ -13,6 +13,7 @@ public class DemoTool extends AbstractTool {
         for (String arg : args) {
             System.out.println(arg);
         }
+        System.out.println(getContext().getString(R.string.demo_string));
     }
 
     /*

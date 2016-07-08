@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Debug Test App</string>
+    <string name="demo_string">Demo String</string>
 </resources>
