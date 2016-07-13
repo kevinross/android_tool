@@ -9,23 +9,17 @@ import name.kevinross.tool.AbstractTool;
  */
 public class DemoTool extends AbstractTool {
     @Override
-    protected void run(String[] args) {
-        for (String arg : args) {
+    protected OptionParser getArgParser() {
+        return new OptionParser("demos:");
+    }
+    protected void run(OptionSet options) {
+        for (char s : "demo".toCharArray()) {
+            System.out.println(String.format("has %s ? %s", String.valueOf(s), Boolean.toString(options.has(String.valueOf(s)))));
+        }
+        Boolean hasS = options.hasArgument("s");
+        System.out.println(String.format("has s ? %s=%s", Boolean.toString(options.has("s")), hasS ? options.valueOf("s").toString() : "null"));
+        for (String arg : getArgs()) {
             System.out.println(arg);
         }
-        System.out.println(getContext().getString(R.string.demo_string));
     }
-
-    /*
-        OR using an option parser
-     */
-    /*
-    protected void run(OptionSet opts) {
-        System.out.println(opts.valueOf("a").toString());
-    }
-
-    @Override
-    protected OptionParser getArgParser() {
-        return new OptionParser("a:");
-    }*/
 }
