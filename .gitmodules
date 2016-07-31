@@ -1,3 +1,6 @@
 [submodule "debuggabletool"]
 	path = debuggabletool
 	url = git@github.com:kevinross/android_debuggable_tool.git
+[submodule "sudo"]
+	path = sudo
+	url = git@github.com:kevinross/android_su_service.git
