@@ -1,1 +1,1 @@
-include ':debuggabletool', ':sudo', ':debugtestapp'
+include ':debuggabletool', ':sudo', ':debugtestapp', ':demoauthorizationfailure'

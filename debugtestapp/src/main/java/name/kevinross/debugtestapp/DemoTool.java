@@ -1,7 +1,12 @@
 package name.kevinross.debugtestapp;
 
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.ServiceManager;
+
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
+import name.kevinross.sudo.SuperContextContentResolver;
 import name.kevinross.tool.AbstractTool;
 
 /**
@@ -21,5 +26,7 @@ public class DemoTool extends AbstractTool {
         for (String arg : getArgs()) {
             System.out.println(arg);
         }
+        SuperContextContentResolver.injectProviders(this.getContext(), this.getActivityThread());
+        //ServiceManager.addService("name.kevinross.debugtestapp.DemoService", DemoService.getBinder());
     }
 }

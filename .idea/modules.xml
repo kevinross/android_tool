@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DebuggableTool.iml" filepath="$PROJECT_DIR$/DebuggableTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debuggabletool/debuggabletool.iml" filepath="$PROJECT_DIR$/debuggabletool/debuggabletool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/debugtestapp/debugtestapp.iml" filepath="$PROJECT_DIR$/debugtestapp/debugtestapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoauthorizationfailure/demoauthorizationfailure.iml" filepath="$PROJECT_DIR$/demoauthorizationfailure/demoauthorizationfailure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sudo/sudo.iml" filepath="$PROJECT_DIR$/sudo/sudo.iml" />
+    </modules>
+  </component>
+</project>
