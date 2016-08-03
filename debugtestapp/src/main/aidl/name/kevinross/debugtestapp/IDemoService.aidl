@@ -6,4 +6,5 @@ package name.kevinross.debugtestapp;
 interface IDemoService {
     String echo(String value);
     int getUid();
+    int nextInt();
 }
